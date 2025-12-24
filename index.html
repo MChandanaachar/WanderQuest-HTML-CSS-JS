@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WanderQuest | Explore Karnataka</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="images/wanderquestlogo.png" alt="WanderQuest Logo">
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#destinations" class="nav-link">Destinations</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <a href="#destinations" class="btn-primary">Start Exploring</a>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="home">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <h1>Discover <span>Karnataka</span><br>Like Never Before</h1>
+        <p>
+            From misty hills to ancient ruins and serene beaches,
+            WanderQuest helps you explore unforgettable journeys.
+        </p>
+
+        <div class="search-box">
+            <input type="text" placeholder="Where do you want to explore?">
+            <button onclick="document.getElementById('destinations').scrollIntoView({behavior:'smooth'})">
+                Search
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section about">
+    <div class="section-inner about-inner">
+        <div class="about-image">
+            <img src="images/about-image.jpg" alt="About Karnataka Travel">
+        </div>
+
+        <div class="about-text">
+            <h2>About WanderQuest</h2>
+            <p>
+                WanderQuest is a Karnataka-focused travel experience platform
+                designed for explorers who seek more than just destinations.
+                We connect you with nature, culture, adventure, and unforgettable memories
+                across the heart of South India.
+            </p>
+            <p>
+                Whether it’s trekking through the Western Ghats,
+                exploring heritage sites, or relaxing on untouched beaches,
+                your journey begins here.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= DESTINATIONS ================= -->
+<section id="destinations" class="section">
+    <div class="section-inner">
+        <h2>Top Destinations</h2>
+        <p>Hand-picked places that define the beauty and spirit of Karnataka.</p>
+
+        <div class="destinations-container">
+            <div class="destination-card">
+                <img src="images/dest1-coorg.jpg" alt="Coorg">
+                <h3>Coorg</h3>
+                <p>Misty hills, coffee plantations, and peaceful escapes.</p>
+            </div>
+
+            <div class="destination-card">
+                <img src="images/dest2-hampi.jpg" alt="Hampi">
+                <h3>Hampi</h3>
+                <p>Ancient ruins and timeless heritage landscapes.</p>
+            </div>
+
+            <div class="destination-card">
+                <img src="images/dest3-gokarna.jpg" alt="Gokarna">
+                <h3>Gokarna</h3>
+                <p>Serene beaches with spiritual charm.</p>
+            </div>
+
+            <div class="destination-card">
+                <img src="images/dest4-jogfalls.jpg" alt="Jog Falls">
+                <h3>Jog Falls</h3>
+                <p>One of India’s tallest and most majestic waterfalls.</p>
+            </div>
+
+            <div class="destination-card">
+                <img src="images/dest5-chikmagalur.jpg" alt="Chikmagalur">
+                <h3>Chikmagalur</h3>
+                <p>Coffee estates surrounded by lush green mountains.</p>
+            </div>
+
+            <div class="destination-card">
+                <img src="images/dest6-kabini.jpg" alt="Kabini">
+                <h3>Kabini</h3>
+                <p>Wildlife safaris and riverside adventures.</p>
+            </div>
+            
+            <div class="destination-card">
+                <img src="images/dest7-shivanasamudra.jpg" alt="Chikmagalur">
+                <h3>Shivanasamudra</h3>
+                <p>A breathtaking waterfall on the Kaveri River, known for its twin falls (Gaganachukki & Bharachukki). </p>
+            </div>
+
+            <div class="destination-card">
+                <img src="images/dest8-bandipur.jpg" alt="Kabini">
+                <h3>Bandipur National Park</h3>
+                <p>A key tiger reserve, offering abundant wildlife and lush forests.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="section">
+    <div class="section-inner">
+        <h2>Experiences We Offer</h2>
+        <p>More than travel — experiences that stay with you.</p>
+
+        <div class="services-container">
+            <div class="service-card">
+                <img src="images/service-trekking.png" alt="Trekking">
+                <h3>Trekking</h3>
+                <p>Guided treks through scenic mountain trails.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="images/service-safari.png" alt="Safari">
+                <h3>Wildlife Safari</h3>
+                <p>Explore forests and encounter wildlife responsibly.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="images/service-watersports.png" alt="Water Sports">
+                <h3>Water Adventures</h3>
+                <p>Kayaking, boating, and river exploration.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="images/service-cultural.png" alt="Culture">
+                <h3>Cultural Tours</h3>
+                <p>Experience traditions, temples, and local life.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section contact">
+    <div class="section-inner">
+        <h2>Contact Us</h2>
+        <p>Planning your next journey? Let’s talk.</p>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- ================= JS ================= -->
+<script src="script.js"></script>
+</body>
+</html>
