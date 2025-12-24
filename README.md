@@ -31,27 +31,6 @@ JavaScript (Vanilla)
 
 Google Fonts (Poppins)
 
-Project Structure
-WanderQuest/
-│── index.html
-│── style.css
-│── script.js
-│── images/
-│   ├── wanderquestlogo.png
-│   ├── wanderquesthero.png
-│   ├── about-image.jpg
-│   ├── dest1-coorg.jpg
-│   ├── dest2-hampi.jpg
-│   ├── dest3-gokarna.jpg
-│   ├── dest4-jogfalls.jpg
-│   ├── dest5-chikmagalur.jpg
-│   ├── dest6-kabini.jpg
-│   ├── dest7-shivanasamudra.jpg
-│   ├── dest8-bandipur.jpg
-│   ├── service-trekking.png
-│   ├── service-safari.png
-│   ├── service-watersports.png
-│   └── service-cultural.png
 
 How to Run
 
