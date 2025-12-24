@@ -291,7 +291,7 @@ body {
     opacity: 0.9;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE DESIGN*/
 @media (max-width: 1024px) {
     .navbar { padding: 0 40px; }
     .logo img { height: 100px; }
