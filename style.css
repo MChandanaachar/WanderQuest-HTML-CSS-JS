@@ -73,6 +73,20 @@ body {
     opacity: 0.9;
 }
 
+.hero {
+    background-size: 110%;
+    animation: heroMove 18s ease-in-out infinite alternate;
+}
+
+@keyframes heroMove {
+    from {
+        background-position: right center;
+    }
+    to {
+        background-position: left center;
+    }
+}
+
 /* HERO */
 .hero {
     height: 100vh;
@@ -172,20 +186,53 @@ body {
     max-width: 700px;
 }
 
-/* ABOUT */
+/* ABOUT SECTION LAYOUT */
 .about {
-    flex-direction: row;
-    gap: 50px;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+/* FIX ABOUT SIDE-BY-SIDE LAYOUT */
+.about-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.about-image {
+    flex: 1;
 }
 
 .about-image img {
-    width: 500px;
+    width: 100%;
+    max-width: 520px;
     border-radius: 20px;
 }
 
 .about-text {
-    max-width: 600px;
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.section.about {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
 }
 
 /* DESTINATIONS */
@@ -195,20 +242,52 @@ body {
     gap: 30px;
     margin-top: 30px;
 }
-
-.destination-card {
-    background: rgba(255,255,255,0.05);
-    border-radius: 15px;
-    overflow: hidden;
-    text-align: center;
-    padding-bottom: 20px;
-    transition: transform 0.3s;
+/* DESTINATION CARD REDUCTION */
+.destination-card img {
+    height: 150px; /* reduced from 200px */
 }
 
+/* CONTINUE BUTTON UNDER DESTINATIONS */
+#destinations-continue-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#destContinueBtn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #2ecc71, #1abc9c);
+    color: #062c1b;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#destContinueBtn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#destContinueBtn:not(.disabled):hover {
+    opacity: 0.9;
+}
+.destination-card.selected {
+    border: 3px solid #8a6cff;
+    transform: scale(1.05);
+    transition: transform 0.3s, border 0.3s;
+}
+
+/* Reduce image height for better fit */
 .destination-card img {
     width: 100%;
-    height: 200px;
+    height: 150px; /* smaller than before */
     object-fit: cover;
+}
+
+.destination-card {
+    padding-bottom: 15px;
 }
 
 .destination-card h3 {
@@ -259,14 +338,24 @@ body {
     transform: scale(1.05);
 }
 
+.service-card.selected {
+  border: 2px solid #8a6cff;
+  transform: scale(1.05);
+}
+
 /* CONTACT FORM */
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
     max-width: 500px;
+    margin: 0 auto;
 }
 
+.section.contact{
+    align-items: center;
+    text-align: center;
+}
 .contact-form input,
 .contact-form textarea {
     padding: 12px 15px;
@@ -315,4 +404,76 @@ body {
     .btn-primary { margin-left: 0; margin-top: 10px; width: 100%; text-align: center; }
     .logo img { height: 80px; }
     .hero { padding-left: 20px; padding-top: 120px; }
+}
+.login-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+}
+
+.login-box {
+    background: #0b1d14;
+    padding: 30px;
+    border-radius: 15px;
+    width: 320px;
+    text-align: center;
+}
+
+.login-box input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+}
+/* CONTINUE BUTTON UNDER SERVICES */
+.continue-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#destContinueBtn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #2ecc71, #1abc9c);
+    color: #062c1b;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#destContinueBtn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#destContinueBtn:not(.disabled):hover {
+    opacity: 0.9;
+}
+
+/* ================= CONTINUE BUTTON UNDER SERVICES ================= */
+#continueBtn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #2ecc71, #1abc9c);
+    color: #062c1b;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#continueBtn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#continueBtn:not(.disabled):hover {
+    opacity: 0.9;
 }
